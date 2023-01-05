@@ -17,6 +17,14 @@ The PicoIO is an extension of the [PicoFX](https://github.com/dj505/PicoFX) that
 | Components (per 1 PCB) | Specs | Notes | Recommended Purchase Link | Approximate Min. Cost (USD, per 5 PCBs) |
 |------------------------|-------|-------|---------------------------|-----------------------------------------|
 |1x Raspberry Pi Pico|Any, however WiFi/Bluetooth is currently unsupported|Can be soldered with pin headers or surface mounted.|[Link](https://www.digikey.ca/en/products/detail/raspberry-pi/SC0915/13624793)|$4|
-|JST XH connectors|<ul><li>10x 4 Pin</li><li>1x 3 Pin</li><li>1x 6 Pin</li></ul>|Designed with vertical headers in mind, but horizontal ones may also work. Untested.|TBD|TBD|
+|JST XH connectors|<ul><li>10x 4 Pin</li><li>1x 6 Pin</li><li>1x 3 Pin</li><li>1x 2 Pin</li></ul>|Designed with vertical headers in mind, but horizontal ones may also work. Untested.|TBD|TBD|
 |10x BSS138 MOSFET|SOT23 Package|Required for button LEDs. Recommendation - buy extras.|[Link](https://www.lcsc.com/product-detail/MOSFET_ON-Semicon_BSS138_ON-Semicon-ON-BSS138_C52895.html)|$0.85|
 |10x Resistors|10K Ohm, 0805 Surface Mount|Required for button LEDs. Recommendation - buy extras.|[Link](https://www.lcsc.com/product-detail/Chip-span-style-background-color-ff0-Resistor-span-Surface-Mount_Viking-Tech-AR05DTC1001_C416059.html)|$1|
+|1x Pin Header|3 pins|**Optional, only used for debugging.**|N/A|N/A|
+
+## Notes
+Until I can write proper instructions, here are some things to keep in mind:
+* LEDs require a separate power input. Pay close attention to the positive and negative polarity! It's marked on the PCB. **LEDs up to 12V are supported but the trace width only allows approximately 0.7A of current.** Don't overdo the LEDs!
+* This kit should work equally well with 5V or 12V LEDs, but make sure you have a way to power the LEDs you pick. A reasonable number of 5V LEDs *can* be powered over USB, but pay attention to the total current draw! It's a good idea to just use a separate power supply or two USB cables for lighting.
+* The legend at the top of the PCB describes the pin layout for the 10 main button connectors. Everything else has the pins labelled beside its respective connector.
+* As of writing, **this design is untested and may have issues!** I will update this readme once I've confirmed everything works as it should. It *should* work okay, but this is currently a "use at your own risk" project until further notice.
