@@ -1,0 +1,26 @@
+Drill report for PicoIO.kicad_pcb
+Created on 2023-01-05 2:05:40 PM
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'PicoIO-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.400mm  0.0157"  (19 holes)
+    T2  0.950mm  0.0374"  (49 holes)
+    T3  1.000mm  0.0394"  (5 holes)
+    T4  1.020mm  0.0402"  (43 holes)
+
+    Total plated holes count 116
+
+
+Drill file 'PicoIO-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  3.200mm  0.1260"  (3 holes)
+
+    Total unplated holes count 3
