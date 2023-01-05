@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/KiCad-RP-Pico/RP-Pico Libraries/MCU_RaspberryPi_and_Boards.pretty")(options "")(descr ""))
+  (lib (name "LogoFootprints")(type "KiCad")(uri "C:/Users/jayde/Documents/KiCadFootprints/LogoFootprints")(options "")(descr ""))
+)
