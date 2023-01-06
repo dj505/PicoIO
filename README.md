@@ -4,6 +4,8 @@ An affordable, simple, and feature-rich PIU controller IO board
 ## What is this?
 The PicoIO is an extension of the [PicoFX](https://github.com/dj505/PicoFX) that's meant for building larger hand controllers or buttonboards. It's possible to build dance pads too, but as this board lacks multiplexing and is made with 5V LED lighting in mind, it's not ideal. I may design a pad IO PCB in the future, though!
 
+**This project requires small soldering of surface mount components,** however they're **not very difficult** to solder by hand with a bit of practice. Despite the surface mount stuff, I tried my best to keep the majority of this project friendly to beginners or inexperienced makers.
+
 ## Use cases
 * Hand controller (10 buttons, 12 if you include test/service)
 * Arcade buttonboard, for machines that don't already have a buttonboard (TODO - add support in firmware)
