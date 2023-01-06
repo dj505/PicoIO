@@ -26,7 +26,8 @@ The PicoIO is an extension of the [PicoFX](https://github.com/dj505/PicoFX) that
 
 ## Notes
 Until I can write proper instructions, here are some things to keep in mind:
-* LEDs require a separate power input. Pay close attention to the positive and negative polarity! It's marked on the PCB. **LEDs up to 12V are supported but the trace width only allows approximately 0.7A of current.** Don't overdo the LEDs!
-* This kit should work equally well with 5V or 12V LEDs, but make sure you have a way to power the LEDs you pick. A reasonable number of 5V LEDs *can* be powered over USB, but pay attention to the total current draw! It's a good idea to just use a separate power supply or two USB cables for lighting.
-* The legend at the top of the PCB describes the pin layout for the 10 main button connectors. Everything else has the pins labelled beside its respective connector.
-* As of writing, **this design is untested and may have issues!** I will update this readme once I've confirmed everything works as it should. It *should* work okay, but this is currently a "use at your own risk" project until further notice.
+* LEDs require a separate power input and aren't powered by the Pico itself. Pay close attention to the positive and negative polarity! It's marked on the PCB. **LEDs up to 12V are supported but the trace width only allows approximately 0.7A of current.** Don't overdo the LEDs!
+    * If you're using a **reasonable number of 5V LEDs (under 500mA total draw for the entire build),** you can jump the 5V and GND pins on the 6 pin expansion port to the LED power input and power the LEDs through USB directly. **Do not** attempt to power 12V LEDs this way.
+* This kit should work equally well with 5V or 12V LEDs, but make sure you have a way to power the LEDs you pick. A reasonable number of 5V LEDs *can* be powered over USB, but pay attention to the total current draw and don't surpass the USB spec! Doing so is not recommended and would be done at your own risk. It's a good idea to just use a separate power supply or two USB cables for extra lighting.
+* The legend at the top of the PCB describes the pin layout for the 10 main 4 pin button connectors. Everything else has the pins labelled beside its respective connector.
+* As of writing, **this design has not yet been tested!** I will update this readme once I've confirmed everything works as it should. It *should* work as-is, but this is currently a "use at your own risk" project until further notice.
