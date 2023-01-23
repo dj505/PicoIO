@@ -15,6 +15,12 @@ The PicoIO is an extension of the [PicoFX](https://github.com/dj505/PicoFX) that
         * This can be bypassed/remedied by using the expansion IO to control external LEDs with their own external power supply and some MOSFETs. I encourage you to be creative!
 * Upgrade existing hand controllers, in case of broken/defective/underperforming IO
 
+## THT vs SMD Boards
+The PicoIO has two current revisions, one using surface mount components, and one using through-hole components. There are some notable differences between the two!  
+* As the dense traces on the through-hole revision were a challenge to route, the traces used for LED power are thinner, which limits the maximum safe current consumption per button LED to around 0.4A or below.
+* The surface mount revision of the board has much more room for routing, resulting in thicker power traces that can safely handle roughly 1.2A per button LED.
+* The through-hole revision lacks debug headers, but the debug pins on the Pico are still easily accessible. This shouldn't be an issue for anyone anyway, though.
+
 ## Components
 | Components (per 1 PCB) | Specs | Notes | Recommended Purchase Link | Approximate Min. Cost of Components |
 |------------------------|-------|-------|---------------------------|-----------------------------------------|
