@@ -76,3 +76,34 @@ Here are some things to keep in mind:
 * The legend at the top of the PCB describes the pin layout for the 10 main 4 pin button connectors. Everything else has the pins labelled beside its respective connector.
 * Each MOSFET can handle up to 2A bursts if using the recommended parts, ***but*** that doesn't mean you should max them out. The trace width used allows for approximately 1.6A of total current draw which should be more than enough to light up each button. There is a second 5V pin broken out from the Pico's USB line that may be additionally used for a small number of WS2812B or similar LEDs.
 * Up to 12V lighting has been tested and works without a hitch. Once again, pay close attention to polarity!
+
+# Pinouts
+Below are the pinouts for the buttons, as an easy reference in case you're playing around with the firmware.
+
+|     PicoIO      | Raspberry Pi Pico |
+|-----------------|-------------------|
+|P1 down left LED |GPIO0              |
+|P1 down left btn |GPIO1              |
+|P2 down left LED |GPIO2              |
+|P2 down left btn |GPIO3              |
+|P1 up left LED   |GPIO4              |
+|P1 up left btn   |GPIO5              |
+|P2 up left LED   |GPIO6              |
+|P2 up left btn   |GPIO7              |
+|P1 center LED    |GPIO8              |
+|P1 center btn    |GPIO9              |
+|P2 center LED    |GPIO10             |
+|P2 center btn    |GPIO11             |
+|P1 up right LED  |GPIO12             |
+|P1 up right btn  |GPIO13             |
+|P2 up right LED  |GPIO14             |
+|P2 up right btn  |GPIO15             |
+|P1 down right LED|GPIO21             |
+|P1 down right btn|GPIO20             |
+|P2 down right LED|GPIO19             |
+|P2 down right btn|GPIO18             |
+|TEST             |GPIO17             |
+|SERVICE          |GPIO16             |
+|GP26             |GPIO26             |
+|GP27             |GPIO27             |
+|GP28             |GPIO28             |
